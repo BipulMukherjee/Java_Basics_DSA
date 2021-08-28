@@ -1,0 +1,24 @@
+public class SumOfNnumbeers {
+
+        public static void main(String[] args) {
+          bipul(1,2,3,4,5);//you can pass  n nummbers of intrgers in this line
+        }
+        
+   static void bipul(int...var) {
+
+            int sum=0;
+            for (int i=0;i<var.length;i++)
+            {
+                sum = sum+ var[i];
+
+            }
+
+            System.out.println(sum);
+
+        }
+}
+
+
+
+
+/*Output must be 15 *\
