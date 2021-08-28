@@ -1,0 +1,25 @@
+public class OptimisedCheckprime {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the number to be checked");
+        int A=input.nextInt();
+        System.out.println(checkPrime(A));
+    }
+    static boolean checkPrime(int n){
+        int c=2;
+        if(n<=1)
+            return false;
+        else{
+            while(c*c<=n){
+                if(n%c==0)
+                    return false;
+            c++;
+            }
+        return c*c>n;
+
+
+        }
+        
+    }
+
+}
