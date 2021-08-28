@@ -1,0 +1,31 @@
+public class Armstrong {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the number to be checked:");
+        int Arms = input.nextInt();
+        int check=Arm(Arms);
+        if(check== Arms)
+            System.out.println("You got the moon");
+        else
+            System.out.println("fuck  you!!!!!!!!");
+
+    }
+
+     static int Arm(int input) {
+        
+         int sum = 0;
+         if(input<=0)
+             System.out.println("INVALID INPUT");
+         else{
+             while(input>0)
+             {
+                 int rem=input%10;
+                 sum= sum+(rem*rem*rem);
+                 input=input/10;
+             }
+         }
+         return sum;
+     }
+
+
+}
